@@ -1,7 +1,7 @@
 from socket import *
 
 serverName = 'localhost'
-serverPort = 12000
+serverPort = 1200
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect((serverName,serverPort))
 message = input("Escriba una frase en minúsculas:")
