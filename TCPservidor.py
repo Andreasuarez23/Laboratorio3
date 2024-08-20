@@ -1,7 +1,7 @@
 from socket import *
 
 
-serverPort = 12000
+serverPort = 1200
 serverSocket = socket(AF_INET, SOCK_STREAM)
 serverSocket.bind(('localhost', serverPort))
 serverSocket.listen(1)
