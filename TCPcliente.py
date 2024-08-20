@@ -4,7 +4,7 @@ serverName = 'localhost'
 serverPort = 12000
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect((serverName,serverPort))
-message = input('Escriba una frase en minúsculas:')
+message = input("Escriba una frase en minúsculas:")
 clientSocket.send(message.encode())
 
 modifiedMessage = clientSocket.recv(2048)
